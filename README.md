@@ -1,6 +1,6 @@
 # SkyBloom Solution Landing Page
 
-Free landing page for GitHub Pages.
+Free landing page for GitHub Pages or Cloudflare Pages.
 
 ## Features
 - Spanish-first design
@@ -9,23 +9,25 @@ Free landing page for GitHub Pages.
 - Floating WhatsApp button
 - Animated button loading
 - Package delivery intro animation
-- Social media buttons
-- Services and contact sections
+- Favicon using the SkyBloom logo
+- Social sharing preview metadata
+- Service cards focused on Cuba, while still mentioning other destinations
 
 ## Files
 - `index.html`
 - `style.css`
 - `script.js`
 - `logo.jpeg`
+- `favicon.jpeg`
 
-## Publish on GitHub Pages
-1. Create a new GitHub repository.
-2. Upload these 4 files.
-3. Go to Settings > Pages.
-4. Under "Build and deployment", choose:
-   - Source: Deploy from a branch
-   - Branch: main
-   - Folder: /root
-5. Save.
-6. Wait a minute or two. The page will be live at:
-   `https://YOURUSERNAME.github.io/REPOSITORYNAME/`
+## Cloudflare Pages
+1. Push these files to a GitHub repository.
+2. In Cloudflare, go to Workers & Pages > Create application > Pages.
+3. Connect your GitHub repository.
+4. Framework preset: None.
+5. Build command: leave empty.
+6. Build output directory: `/`
+7. Deploy.
+
+Your free URL will look like:
+`https://your-project-name.pages.dev`
